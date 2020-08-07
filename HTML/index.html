@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<script type="text/javascript">
+    var extensionId = "knldjmfmopnpolahpmmgbagdohdnhkik";
+
+    chrome.runtime.sendMessage(extensionId, {command: 'getHostname'},
+    function(response) {
+        document.getElementById("result1").innerText = response;
+    });
+    chrome.runtime.sendMessage(extensionId, {command: 'getSomethingElse'},
+    function(response) {
+        document.getElementById("result2").innerText = response;
+    });
+</script>
+</head>
+<body>
+    <div id="result1"></div>
+    <div id="result2"></div>
+</body>
+</html>
