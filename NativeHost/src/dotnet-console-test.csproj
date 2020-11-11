@@ -6,4 +6,8 @@
     <RootNamespace>dotnet_console_test</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Lyre" Version="1.0.10" />
+  </ItemGroup>
+
 </Project>
